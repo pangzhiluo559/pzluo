@@ -5,14 +5,14 @@ on:
     branches: [ main ]
 jobs: 
   build:
-  # 操作系统选择
-  runs-on:  ubuntu-latest
-  strategy:
-    matrix:
-      node-version: [16.13.2]
+    # 操作系统选择
+    runs-on:  ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [16.13.2]
 
-  steps:
-  - uses: actions/checkout@v2
+    steps:
+    - uses: actions/checkout@v2
     - name: Node.js ${{ matrix.node-version }} 运行测试
       uses: actions/setup-node@v2
       with: 
