@@ -7,9 +7,9 @@ jobs:
   build:
   # 操作系统选择
   runs-on:  ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [16.13.2]
+  strategy:
+    matrix:
+      node-version: [16.13.2]
 
   steps:
   - uses: actions/checkout@v2
